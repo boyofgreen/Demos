@@ -1,12 +1,21 @@
+
+
 function signInWithPassword() {
     // If Windows Hello is supported and there is no existing credential, offer to register Windows Hello
-    if (window.webauthn && !(window.sessionStorage && window.sessionStorage.getItem('credentialID'))) {
-        window.location = 'fidoregister.html';
-    }
-    // Otherwise, go to the inbox
-    else {
+    // if (window.webauthn && !(window.sessionStorage && window.sessionStorage.getItem('credentialID'))) {
+    //     window.location = 'fidoregister.html';
+    // }
+    // // Otherwise, go to the inbox
+    // else {
+    //     window.location = 'inbox.html';
+    // } 
+    // if (sessionStorage.getItem('credentialID')) {
+    //     console.log("the if case past");
+    //     window.location = 'fidoregister.html';
+    // }
+    // else {
         window.location = 'inbox.html';
-    } 
+    // }
 }
 
 function sendToServer(msg) {
